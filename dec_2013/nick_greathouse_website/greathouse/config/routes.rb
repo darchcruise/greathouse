@@ -1,6 +1,10 @@
 Greathouse::Application.routes.draw do
-  resources 'profiles'
-  # get "profiles/index"
+  # resources 'profiles'
+  root :to => 'profiles#index'
+  match "about", :to => "profiles#about"
+  match "music", :to => "profiles#music"
+  match "lessons", :to => "profiles#lessons"
+  match "events", :to => "profiles#events"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -57,5 +61,5 @@ Greathouse::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  match ':controller(/:action(/:id))(.:format)'
 end

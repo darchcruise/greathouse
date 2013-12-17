@@ -1,5 +1,4 @@
-    <!-- HEADER -->
-      <h1 class="center-text">Nick Greahouse</h1>
+
 
     <!-- IMAGE -->
       <img class="center-image" src="/assets/ng2.jpg">
@@ -15,10 +14,13 @@
           <% config.access_token_secret = "L6Bej1EuNZ7o2NMO4Pg4BsRSbeBuekMlixEGLO8TAAzqg" %>
           <% end %>
 
+        <table class="table">
           <% client.user_timeline.each do |tweet|%>
-          <%= tweet.text %>
+            <tr>
+              <td><%= tweet.text %></td>
+            </tr>
           <% end %>
-
+        </table>
 
           <!-- <p>What's happening, people?! I just finished up my YouTube series on the modes of the major scale! Check out all 7! </p>
           <p>Parts 3 & 4 of my new YouTube lesson series are live!  Check them out! </p>
