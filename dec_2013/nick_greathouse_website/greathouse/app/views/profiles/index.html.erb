@@ -1,0 +1,38 @@
+    <!-- HEADER -->
+      <h1 class="center-text">Nick Greahouse</h1>
+
+    <!-- IMAGE -->
+      <img class="center-image" src="/assets/ng2.jpg">
+
+    <!-- NEWS FEED -->
+      <h1 class="center-text"> News Feed</h1>
+        <div class="center-text">
+
+          <% client = Twitter::REST::Client.new do |config| %>
+          <% config.consumer_key  = "GoJYqkpZECrULAweRlKA" %>
+          <% config.consumer_secret = "HlRadsjo5sPQICzEsIfx0sSFfrpD9mxmtxcjSbBQ" %>
+          <% config.access_token = "1007245706-ZC2poUDjhyb0gH2YWwCQBYryqTOT6ReNK4opaxL" %>
+          <% config.access_token_secret = "L6Bej1EuNZ7o2NMO4Pg4BsRSbeBuekMlixEGLO8TAAzqg" %>
+          <% end %>
+
+          <% client.user_timeline.each do |tweet|%>
+          <%= tweet.text %>
+          <% end %>
+
+
+          <!-- <p>What's happening, people?! I just finished up my YouTube series on the modes of the major scale! Check out all 7! </p>
+          <p>Parts 3 & 4 of my new YouTube lesson series are live!  Check them out! </p>
+          <p>Part 2 is up!  Check it out! </p>
+          <p>I just started a series of new YouTube videos about modes!  Here's part 1! </p>
+          <p>Guitar Lessons</p> -->
+        </div>
+
+    <!-- FOOTER -->
+      <footer class="row">
+        <div class="footer"></div>
+           <p class="center-text">This Site is Under Construction</p>
+        </div>
+      </footer>
+
+
+
