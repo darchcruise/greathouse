@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title></title>
+   <script type="text/javascript">
+      function change() {
+        var x = document.getElementById("meal").value;
+        console.log(x);
+        document.getElementById("a").innerHTML = x;
+        }
+  </script>
+</head>
+
+  <body>
+
+      <form>
+        Meal: <input type="text" name="meal" id="meal" onChange="change();">
+      </form>
+
+      <p id="a"></p>
+  </body>
+
+</html>
+

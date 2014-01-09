@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Todo</title>
+  <style>
+    ul {list-style: none}
+  </style>
+  <script>
+
+    function one() {
+      // var snoop = document.getElementById("fitem").value;
+      // document.getElementById("todolist").innerHTML = snoop;
+
+      var btn=document.createElement("li");
+      document.body.appendChild(btn);
+    }
+
+  </script>
+</head>
+
+
+
+
+<body>
+  <h1>To Do List</h1>
+
+    <input type="text" name="fitem" id="fitem">
+    <button onClick="one();">Add Item</button>
+
+
+  <ul id="todolist">
+    <li></li>
+  </ul>
+</body>
+
+</html>

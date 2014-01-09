@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title></title>
+   <script type="text/javascript">
+      function burger() {
+        var meal = document.getElementById("food").value;
+        console.log(meal);
+
+        if (meal != " ") {
+          document.getElementById("a").innerHTML = "Would you like fries with that?";
+          }
+
+        else
+        }
+
+        var ans = document.getElementById("a").value
+
+      function x() {
+        alert('You ordered ' + ans + ' and fries');
+      }
+
+      function y() {
+        alert('You ordered ' + ans);
+      }
+
+
+
+
+  </script>
+</head>
+
+  <body>
+
+      <form>
+        Meal: <input type="text" name="food" id="food" onChange="burger();"><br>
+       <input type="radio" id="decision1" value="1" name="decision" onClick="x();" />Yes
+        <input type="radio" id="decision2" value="2" name="decision" onClick="y();"/>No
+      </form>
+
+      <p id="a"></p>
+  </body>
+
+</html>
+
