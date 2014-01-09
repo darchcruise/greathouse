@@ -7,11 +7,9 @@
   <script>
 
     function one() {
-      // var snoop = document.getElementById("fitem").value;
-      // document.getElementById("todolist").innerHTML = snoop;
-
+      var item = document.getElementById("fitem").value;
       var btn = document.createElement("li");
-      btn.innerText = "Hello";
+      btn.innerText = item;
       document.body.appendChild(btn);
     }
 
